@@ -20,5 +20,14 @@
       <description>大家好 我的博客开通了，希望我能写出好的文章给大家看。</description>
     </item>
     
+    <item>
+      <title>第二篇博客</title>
+      <link>http://example.org/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</link>
+      <pubDate>Mon, 02 Sep 2019 23:07:23 +0800</pubDate>
+      
+      <guid>http://example.org/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
+      <description>又见面了 Hugo的博客问题得到进一步解决了，真开心。</description>
+    </item>
+    
   </channel>
 </rss>
