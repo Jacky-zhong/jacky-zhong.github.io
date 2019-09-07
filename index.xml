@@ -6,10 +6,38 @@
     <description>Recent content on 嘉嘉的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 04 Sep 2019 23:49:18 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 06 Sep 2019 23:49:18 +0800</lastBuildDate>
     
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>《HTML入门笔记1》</title>
+      <link>http://example.org/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Fri, 06 Sep 2019 23:49:18 +0800</pubDate>
+      
+      <guid>http://example.org/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</guid>
+      <description>HTML到底是谁发明的？ 在1990年左右，英国人Tim Berners-Lee创造了html，便于记忆，我们都俗称他为李爵士。
+HTML的起手应该写啥呢？ 输入一个英文的!（注意是英文输入法的!），在按tab键，就能把HTML的默认起手式显示出来。一般把lang=&amp;ldquo;en&amp;rdquo;中的&amp;rdquo;en&amp;rdquo;改成&amp;rdquo;zh-CN&amp;rdquo;即可，其他都不用改。
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;zh-CN&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt; &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot;&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt;	&amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  html常用的表章节的标签有哪些？它们的意思？ . h1~h6（标题）
+. section（章节）
+. article（文章）
+. p（段落）
+. header（头部）
+. footer（脚部）
+. main（主要内容）
+. aside（旁支内容） 一般用来写导航栏
+. div（划分）
+html全局属性有哪些？ 全局属性指的是所有标签都有的属性
+. class 给标签一个标记
+. contenteditable 使任何一个元素可以被编辑
+. hidden 让任何东西看不见
+. id 也是给标签一个标记(注意：不到万不得已不要用id，因为id不报错)
+. style 每个元素可以写个style属性
+. tabindex 控制tab键的顺序
+. title 鼠标放在省略号时会显示完整的内容
+html常用的内容标签有哪些？它们的意思？ .</description>
+    </item>
     
     <item>
       <title>第四篇博客</title>
