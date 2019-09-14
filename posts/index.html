@@ -33,7 +33,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://example.org/posts/" />
 
-<meta property="og:updated_time" content="2019-09-06T23:49:18+08:00" />
+<meta property="og:updated_time" content="2019-09-13T23:49:18+08:00" />
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="">
 
@@ -89,6 +89,41 @@
   <article class="pa3 pa4-ns nested-copy-line-height nested-img">
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
     <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="link black dim">
+        《HTML常用标签》
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      a 标签的用法 a 标签的属性： 前言
+做前端的一定要像用户一样打开自己的html页面，绝对不能双击打开页面！！！
+那怎么操作呢？
+打开终端
+输入 &lsquo;hs -c-1&rsquo;，或者输入&rsquo;parcel 文件名&rsquo;。
+就会生成本地的域名，我们就能像用户一样输入网址来进入页面了。
+. href，写网址。取值如下：
+ 网址：//google.com（会自动适应 https 或 http）
+ 路径
+  /a/b/c 以及 a/b/c。如果我们开启 http 服务，那么/a/b/c 的根目录就不是硬盘的根目录，你在哪里开的 http 服务哪里就是根目录。
+index.html 以及./index.html。
+ 伪协议  javascript:代码;（写一个点击后不刷新页面不跳转的 a 标签，就可以加 javascript:;）
+mailto:邮箱（点击 a 标签后，直接跳转到发邮件的页面，并且自动补全此邮箱地址）
+tel:手机号（点击此 a 标签，会弹出一个界面，可直接拨打此手机号。该技巧可以用在简历上）
+ id，href=#xxx。  a 标签的作用：跳转外部页面，跳转内部锚点，跳转到邮箱或电话等
+target，指定在哪个窗口打开你的超链接。取值如下：
+ 一般使用 _blank ，表示在空白页打开。
+ 默认值是_self，表示在当前页面打开。
+ _top，当文件引用另一个文件，并且另一个文件里面有一个链接，target 的值为_top，这时在页面上点击这个链接会在该引用文件的顶级窗口打开。
+ _parent，当文件引用另一个文件，另一个文件再引用一个文件，并且这再一个文件里面有链接，target 的值为_parent，这时在页面上点击这个链接会在该引用文件的上一级窗口打开。
+ xxx，如果有一个叫做 xxx 的窗口，点击 a 链接时就在 xxx 窗口打开，如果没有叫 xxx 的窗口，就创建一个叫 xxx 的窗口。怎么验证呢？打开chrome浏览器控制台，输入 window.
+    </div>
+  </div>
+</div>
+</div>
       
         <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
   <div class="bg-white mb3 pa4 gray overflow-hidden">

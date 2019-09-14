@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>嘉嘉的博客  | 《HTML常用标签》</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.57.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="《HTML常用标签》" />
+<meta property="og:description" content="a 标签的用法 a 标签的属性： 前言
+做前端的一定要像用户一样打开自己的html页面，绝对不能双击打开页面！！！
+那怎么操作呢？
+打开终端
+输入 &lsquo;hs -c-1&rsquo;，或者输入&rsquo;parcel 文件名&rsquo;。
+就会生成本地的域名，我们就能像用户一样输入网址来进入页面了。
+. href，写网址。取值如下：
+ 网址：//google.com（会自动适应 https 或 http）
+ 路径
+  /a/b/c 以及 a/b/c。如果我们开启 http 服务，那么/a/b/c 的根目录就不是硬盘的根目录，你在哪里开的 http 服务哪里就是根目录。
+index.html 以及./index.html。
+ 伪协议  javascript:代码;（写一个点击后不刷新页面不跳转的 a 标签，就可以加 javascript:;）
+mailto:邮箱（点击 a 标签后，直接跳转到发邮件的页面，并且自动补全此邮箱地址）
+tel:手机号（点击此 a 标签，会弹出一个界面，可直接拨打此手机号。该技巧可以用在简历上）
+ id，href=#xxx。  a 标签的作用：跳转外部页面，跳转内部锚点，跳转到邮箱或电话等
+target，指定在哪个窗口打开你的超链接。取值如下：
+ 一般使用 _blank ，表示在空白页打开。
+ 默认值是_self，表示在当前页面打开。
+ _top，当文件引用另一个文件，并且另一个文件里面有一个链接，target 的值为_top，这时在页面上点击这个链接会在该引用文件的顶级窗口打开。
+ _parent，当文件引用另一个文件，另一个文件再引用一个文件，并且这再一个文件里面有链接，target 的值为_parent，这时在页面上点击这个链接会在该引用文件的上一级窗口打开。
+ xxx，如果有一个叫做 xxx 的窗口，点击 a 链接时就在 xxx 窗口打开，如果没有叫 xxx 的窗口，就创建一个叫 xxx 的窗口。怎么验证呢？打开chrome浏览器控制台，输入 window." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" />
+<meta property="article:published_time" content="2019-09-13T23:49:18+08:00" />
+<meta property="article:modified_time" content="2019-09-13T23:49:18+08:00" />
+<meta itemprop="name" content="《HTML常用标签》">
+<meta itemprop="description" content="a 标签的用法 a 标签的属性： 前言
+做前端的一定要像用户一样打开自己的html页面，绝对不能双击打开页面！！！
+那怎么操作呢？
+打开终端
+输入 &lsquo;hs -c-1&rsquo;，或者输入&rsquo;parcel 文件名&rsquo;。
+就会生成本地的域名，我们就能像用户一样输入网址来进入页面了。
+. href，写网址。取值如下：
+ 网址：//google.com（会自动适应 https 或 http）
+ 路径
+  /a/b/c 以及 a/b/c。如果我们开启 http 服务，那么/a/b/c 的根目录就不是硬盘的根目录，你在哪里开的 http 服务哪里就是根目录。
+index.html 以及./index.html。
+ 伪协议  javascript:代码;（写一个点击后不刷新页面不跳转的 a 标签，就可以加 javascript:;）
+mailto:邮箱（点击 a 标签后，直接跳转到发邮件的页面，并且自动补全此邮箱地址）
+tel:手机号（点击此 a 标签，会弹出一个界面，可直接拨打此手机号。该技巧可以用在简历上）
+ id，href=#xxx。  a 标签的作用：跳转外部页面，跳转内部锚点，跳转到邮箱或电话等
+target，指定在哪个窗口打开你的超链接。取值如下：
+ 一般使用 _blank ，表示在空白页打开。
+ 默认值是_self，表示在当前页面打开。
+ _top，当文件引用另一个文件，并且另一个文件里面有一个链接，target 的值为_top，这时在页面上点击这个链接会在该引用文件的顶级窗口打开。
+ _parent，当文件引用另一个文件，另一个文件再引用一个文件，并且这再一个文件里面有链接，target 的值为_parent，这时在页面上点击这个链接会在该引用文件的上一级窗口打开。
+ xxx，如果有一个叫做 xxx 的窗口，点击 a 链接时就在 xxx 窗口打开，如果没有叫 xxx 的窗口，就创建一个叫 xxx 的窗口。怎么验证呢？打开chrome浏览器控制台，输入 window.">
+
+
+<meta itemprop="datePublished" content="2019-09-13T23:49:18&#43;08:00" />
+<meta itemprop="dateModified" content="2019-09-13T23:49:18&#43;08:00" />
+<meta itemprop="wordCount" content="289">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="《HTML常用标签》"/>
+<meta name="twitter:description" content="a 标签的用法 a 标签的属性： 前言
+做前端的一定要像用户一样打开自己的html页面，绝对不能双击打开页面！！！
+那怎么操作呢？
+打开终端
+输入 &lsquo;hs -c-1&rsquo;，或者输入&rsquo;parcel 文件名&rsquo;。
+就会生成本地的域名，我们就能像用户一样输入网址来进入页面了。
+. href，写网址。取值如下：
+ 网址：//google.com（会自动适应 https 或 http）
+ 路径
+  /a/b/c 以及 a/b/c。如果我们开启 http 服务，那么/a/b/c 的根目录就不是硬盘的根目录，你在哪里开的 http 服务哪里就是根目录。
+index.html 以及./index.html。
+ 伪协议  javascript:代码;（写一个点击后不刷新页面不跳转的 a 标签，就可以加 javascript:;）
+mailto:邮箱（点击 a 标签后，直接跳转到发邮件的页面，并且自动补全此邮箱地址）
+tel:手机号（点击此 a 标签，会弹出一个界面，可直接拨打此手机号。该技巧可以用在简历上）
+ id，href=#xxx。  a 标签的作用：跳转外部页面，跳转内部锚点，跳转到邮箱或电话等
+target，指定在哪个窗口打开你的超链接。取值如下：
+ 一般使用 _blank ，表示在空白页打开。
+ 默认值是_self，表示在当前页面打开。
+ _top，当文件引用另一个文件，并且另一个文件里面有一个链接，target 的值为_top，这时在页面上点击这个链接会在该引用文件的顶级窗口打开。
+ _parent，当文件引用另一个文件，另一个文件再引用一个文件，并且这再一个文件里面有链接，target 的值为_parent，这时在页面上点击这个链接会在该引用文件的上一级窗口打开。
+ xxx，如果有一个叫做 xxx 的窗口，点击 a 链接时就在 xxx 窗口打开，如果没有叫 xxx 的窗口，就创建一个叫 xxx 的窗口。怎么验证呢？打开chrome浏览器控制台，输入 window."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://example.org/" class="f3 fw2 hover-white no-underline white-90 dib">
+      嘉嘉的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">《HTML常用标签》</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-09-13T23:49:18&#43;08:00">September 13, 2019</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<h1 id="a-标签的用法">a 标签的用法</h1>
+
+<h2 id="a-标签的属性">a 标签的属性：</h2>
+
+<p>前言</p>
+
+<p>做前端的一定要像用户一样打开自己的html页面，绝对不能双击打开页面！！！</p>
+
+<p>那怎么操作呢？</p>
+
+<p>打开终端</p>
+
+<p>输入 &lsquo;hs -c-1&rsquo;，或者输入&rsquo;parcel 文件名&rsquo;。</p>
+
+<p>就会生成本地的域名，我们就能像用户一样输入网址来进入页面了。</p>
+
+<p>. href，写网址。取值如下：</p>
+
+<ol>
+<li><p>网址：//google.com（会自动适应 https 或 http）</p></li>
+
+<li><p>路径</p></li>
+</ol>
+
+<p>/a/b/c 以及 a/b/c。如果我们开启 http 服务，那么/a/b/c 的根目录就不是硬盘的根目录，你在哪里开的 http 服务哪里就是根目录。</p>
+
+<p>index.html 以及./index.html。</p>
+
+<ol>
+<li>伪协议</li>
+</ol>
+
+<p>javascript:代码;（写一个点击后不刷新页面不跳转的 a 标签，就可以加 javascript:;）</p>
+
+<p>mailto:邮箱（点击 a 标签后，直接跳转到发邮件的页面，并且自动补全此邮箱地址）</p>
+
+<p>tel:手机号（点击此 a 标签，会弹出一个界面，可直接拨打此手机号。该技巧可以用在简历上）</p>
+
+<ol>
+<li>id，href=#xxx。</li>
+</ol>
+
+<p>a 标签的作用：跳转外部页面，跳转内部锚点，跳转到邮箱或电话等</p>
+
+<p>target，指定在哪个窗口打开你的超链接。取值如下：</p>
+
+<ol>
+<li><p>一般使用 _blank ，表示在空白页打开。</p></li>
+
+<li><p>默认值是_self，表示在当前页面打开。</p></li>
+
+<li><p>_top，当文件引用另一个文件，并且另一个文件里面有一个链接，target 的值为_top，这时在页面上点击这个链接会在该引用文件的顶级窗口打开。</p></li>
+
+<li><p>_parent，当文件引用另一个文件，另一个文件再引用一个文件，并且这再一个文件里面有链接，target 的值为_parent，这时在页面上点击这个链接会在该引用文件的上一级窗口打开。</p></li>
+
+<li><p>xxx，如果有一个叫做 xxx 的窗口，点击 a 链接时就在 xxx 窗口打开，如果没有叫 xxx 的窗口，就创建一个叫 xxx 的窗口。怎么验证呢？打开chrome浏览器控制台，输入 window.name，会出现&rsquo;xxx&rsquo;，也就是当前窗口的名字。</p></li>
+
+<li><p>做一个 goodbye 网站。链接的 target 为 xxx，iframe 的 name 也等于 xxx，这时在页面上点击链接，就会在 iframe 里打开链接的网页。</p></li>
+
+<li><p>iframe 标签，目前前端已经很少使用这个标签了，因为它不好用，一般老系统使用，不需要过多学习。新的前端一般都使用 Ajax。</p></li>
+</ol>
+
+<h2 id="img-标签的用法">img 标签的用法</h2>
+
+<p>. 作用：发出 get 请求，展示一张图片。</p>
+
+<p>. 属性：alt/height/width/src。图片加载失败，就会显示 alt 的文字内容，一般用来提示用户。height、width 的单位不用写，默认是 px，因为只支持 px，只写 height，width 会自适应，只写 width，height会自适应，width和height都写，图片会变形。警告：永远不能让图片变形。</p>
+
+<p>. 事件：onload/onerror，监听图片是否
+加载成功。如果成功，调用onload，如果失败，调用onerror。调用挽救图片（例如经常看到的404页面）是用户体验的一种优化。</p>
+
+<pre><code>xxx.onload = function() { console.log(&quot;图片加载成功&quot;); }; xxx.onerror = function() { console.log(&quot;图片加载失败&quot;); xxx.src = &quot;/404.png&quot;; }; 
+</code></pre>
+
+<p>. 响应式
+为了让图片自适应手机或者平板页面，只需加这代码就ok。</p>
+
+<pre><code>max-width: 100%
+
+</code></pre>
+
+<h1 id="table-标签的用法">table 标签的用法</h1>
+
+<pre><code class="language-html">&lt;table&gt; 
+&lt;thead&gt; 
+&lt;tr&gt; 
+&lt;th&gt;&lt;/th&gt; //table head 特殊的小格子，里面的内容有加粗效果
+&lt;/tr&gt; //table row 
+&lt;/thead&gt; 
+&lt;tbody&gt; 
+&lt;tr&gt; 
+&lt;td&gt;&lt;/td&gt; //table data 
+&lt;/tr&gt; 
+&lt;/tbody&gt;
+&lt;tfoot&gt;&lt;/tfoot&gt; 
+&lt;/table&gt; 
+
+</code></pre>
+
+<p>table 里只能有thead,tbody,tfoot这三个标签，可以只有 thead 和 tbody，或者只有 tbody。</p>
+
+<h2 id="table-相关的样式">table 相关的样式：</h2>
+
+<p>. table-layout，取值有 auto、fixed，auto 是根据内容确定每一份所占宽度，fixed 是每一份等宽。</p>
+
+<p>. border-collapse，取值是 collapse，控制表格的 border 是否合并，默认不合并。</p>
+
+<p>. border-spacing，控制 border 和 border 之间的距离，取值是数值，一般写 0，因为我们一般不希望表格之间有空隙。</p>
+
+<p>. border-collapse 和 border-spacing 一般都在 reset.css 里写好。</p>
+
+<h1 id="其他感想">其他感想</h1>
+
+<h2 id="form-标签">form 标签</h2>
+
+<p>作用：发 get 或 post 请求，然后刷新页面</p>
+
+<p>属性：action/method/autocomplete/target</p>
+
+<pre><code class="language-html">&lt;form action=&quot;/xxx&quot; method=&quot;POST&quot; autocomplete=&quot;on&quot; target=&quot;_blank&quot;&gt;  &lt;/form&gt; 
+
+</code></pre>
+
+<p>. action 里写什么，我们点击之后就会请求到那个页面。
+. method 是用来控制发送 get 请求还是 post 请求，默认是 get。
+. autocomplete 默认值是 off，写的话一般写 on，配合
+<code>&lt;input name=&quot;username&quot;/&gt;</code> ，可以达成下拉建议用户名的效果。</p>
+
+<p>target,和 a 标签里的 target 用法一样，告诉浏览器我要提交到哪个页面，哪个页面应该刷新，取值有_blank、页面名字 xxx。</p>
+
+<p>事件：onsubmit:当用户点提交时就会触发这事件</p>
+
+<h3 id="注意">注意</h3>
+
+<p><code>onsubmit &lt;input type=&quot;submit&quot; value=&quot;搞起&quot;/&gt;</code>和<code>&lt;button type=&quot;submit&quot;&gt;搞起&lt;button/&gt;</code>的区别是，input 只支持纯文本，button 标签里还可以套标签，比如 strong、img。
+注意form 表单里必须要有一个 type=submit 的按钮，才可以触发 submit。</p>
+
+<p>input 标签</p>
+
+<p>作用：让用户输入内容</p>
+
+<pre><code class="language-html">&lt;input name=&quot;username&quot; type=&quot;text&quot; /&gt; &lt;input type=&quot;submit&quot; /&gt;
+
+</code></pre>
+
+<p><input name="username" type="text；submit" /> <input type="submit" /></p>
+
+<p>. 属性： 类型 type；</p>
+
+<p>. 值：text/button/password/number/radio/checkbox/color/hidden/file/submit/email/search/tel</p>
+
+<p>. type=&ldquo;hidden&rdquo;是看不见的 input，是用来给 js 自动填 id 或字符串的。</p>
+
+<p>. file 是点击后可上传文件，但只能上传一个文件，后面加 multiple 可同时上传多个。</p>
+
+<p>事件：onchange/onfocus/onblur</p>
+
+<p>验证器：在 input 后面加个 required，当你输入空白时就不能提交并会提示你。</p>
+
+<p>textarea 标签</p>
+
+<p>输入文本框，style=&ldquo;resize:none;width:50%;height:300px&rdquo;，表示文本框不可拖动，宽度为窗口一半高度 300px。</p>
+
+<p>select 标签</p>
+
+<pre><code class="language-html">&lt;select&gt; 
+&lt;option value=&quot;&quot;&gt;-请选择-&lt;/option&gt; 
+&lt;option value=&quot;1&quot;&gt;星期一&lt;/option&gt; 
+&lt;option value=&quot;2&quot;&gt;星期二&lt;/option&gt; 
+&lt;/select&gt;
+</code></pre>
+
+<p>配合 option 使用。得到一个可选择下拉列表。例如</p>
+
+<p><select> <option value="">-请选择-</option> <option value="1">星期一</option> <option value="2">星期二</option> </select></p>
+
+<p>注意事项</p>
+
+<p>. 一般不监听input的click事件</p>
+
+<p>. form里面的input要有name</p>
+
+<p>. form里要放一个type=submit才能触发submit 事件。</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://example.org/" >
+    &copy; 2019 嘉嘉的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
