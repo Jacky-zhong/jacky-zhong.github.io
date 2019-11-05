@@ -50,4 +50,8 @@
     <loc>http://example.org/tags/</loc>
   </url>
   
+  <url>
+    <loc>http://example.org/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</loc>
+  </url>
+  
 </urlset>

@@ -104,5 +104,45 @@ html常用的内容标签有哪些？它们的意思？ .</description>
       <description>又见面了 Hugo的博客问题得到进一步解决了，真开心。</description>
     </item>
     
+    <item>
+      <title>《CSS知识总结》</title>
+      <link>http://example.org/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</guid>
+      <description>CSS动画 动画是指许多静止的画面（帧）以一定的速度（如每秒30张）连续播放时，肉眼因视觉残像产生错觉，而误以为是活动的画面。
+帧是指每个静止的画面；
+播放速度：每秒24帧（影视）或者每秒30帧（游戏）
+如将一个div从左往右移动，这中间会涉及到重新布局、绘制、合成；当然这要根据实际情况有可能布局、绘制会被省略。既然说到浏览器的渲染，那我们就来给他深入的学习一下！
+浏览器的渲染过程 （1）根据HTML构建HTML树，DOM；
+（2）根据CSS构建CSS树，CSSOM；
+（3）将两棵树合并成一颗渲染树，Render tree；
+（4）layout布局 （文档流、盒模型、计算大小和位置）
+（5）paint绘制 （把边框颜色、文字颜色、阴影等画出来）
+（6）compose合成 （根据层叠关系展示画面）
+三棵树 ￼
+刚刚在渲染过程中，有提到省略某些步骤；下面我们来具体说说在什么情况下这些可以被省略。
+1.如果您修改元素的“layout”属性，也就是改变了元素的几何属性（例如宽度、高度、左侧或顶部位置等），那么浏览器将必须检查所有其他元素，然后“自动重排”页面。任何受影响的部分都需要重新绘制，而且最终绘制的元素需进行合成。
+￼2.如果您修改“paint only”属性（例如背景图片、文字颜色或阴影等），即不会影响页面布局的属性，则浏览器会跳过布局，但仍将执行绘制。
+￼3.如果您更改一个既不要布局也不要绘制的属性，则浏览器将跳到只执行合成。 这个最后的版本开销最小，最适合于应用生命周期中的高压力点，例如动画或滚动。
+￼
+讲了这么多，那到底CSS动画该如何制作呢？下面以跳动的心为实列，来具体给大家阐述CSS 动画的两种做法（transition 和 animation） transition
+animation
+transition (详细请查看MDN) 作用：补充中间帧
+语法
+transition：属性名 时长 过渡方式 延迟
+transition：left 200ms linear
+可以用逗号分隔两个不同属性
+transition：left 200ms,top 400ms
+可以用all代表所有属性
+transition:all 200ms
+过度方式有：linear/ease/ease-in/ease-out/ease-in-out/cubic-bezier/setp-start/step-end/steps
+注意：不是所有属性都能过渡
+display: none=&amp;gt;block没法过渡
+一般改成visibility: hidden=&amp;gt;visible
+animation (详细请查看MDN) 两种完整语法
+@keyframes slidein { from{ transform: translateX(0%); } to { transform: translateX(100%); } }  @keyframes identifier { 0% {top: 0;left;0;} 30% {top:50px;} 68%,72% {left:50px;} 100% {top:100px;left:100%;} }  缩写语法</description>
+    </item>
+    
   </channel>
 </rss>
